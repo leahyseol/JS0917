@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<form action="" name="frm">
+	<input type="text" name="id">
+	<button type="button" onclick="window()">창열기</button>
+</form>
+	<script>
+	//q브라우저 객체모델
+	//window 	- location
+	//		 	- history
+	//			- document - image, anchor, link
+	//			- checkbox radio
+	//			- select
+	
+	//window.필드
+	//	window opener
+	//window.메소드()
+	//window.open self.open() open()
+	//window.close() self.close() close()
+	
+	function winopen(){
+		window.open('ex2.html','',''width=200,height=100,left=100,top=100,resizable=no,scrollbars=no,menubar=no,titlebar=no');
+	}
+	function winopen2(){
+		var child=open('ex4.html','','width=300,height=300');
+		child.document.fm.id.value='입력하세요';
+	}
+	
+	</script>
+
+</body>
+</html>

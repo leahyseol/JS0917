@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>열린창</h1>
+<form name="fm">
+	<input type="text" name="id">
+	<button type="button" onclick="">확인</button>
+</form>
+
+<script>
+	function check(){
+		//window.opener.document.frm.id.value=window.document.fm.id.value
+		opener.document.frm.id.value=fm.id.value;
+		//opener.location.href='ex2.html';
+	close();//window.close(); self.close();
+	}
+
+</script>
+</body>
+</html>

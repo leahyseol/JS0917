@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<button type="button" onclick="alert('메시지')">버튼</button>
+	<button type="button" onmouseover="fun2();">버튼2</button>
+	<button type="button" ondblclick="fun1();">버튼1</button>
+	<br>
+	<input type="text" name="name1" onfocus="fun3();"><br>
+	<input type="text" name="name1" onkeyup="fun4();"><br>
+
+	<script>
+		// 이벤트: 어떤 대상에 신호를 줌
+		// 이벤트 핸들러: 신호를 받으면 연결된 명령문 실행
+		// 이벤트 종류(이벤트 이름)
+		// click dblclick
+		// mousedown mouseup mouseover mouseout mousemove dragdrops
+		// submit reset
+		// load upload
+		function fun1(){
+			alert('함수');
+			alert('호출');
+			
+		}
+		function fun2(){
+			alert('마우스 오버');
+		}
+		function fun3(){
+			alert('포커스');	
+		}
+		function fun4(){
+			alert('키 눌렀다가 놓았음');
+		}
+	</script>		
+			
+</body>
+</html>
